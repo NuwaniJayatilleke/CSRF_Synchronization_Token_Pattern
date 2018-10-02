@@ -44,7 +44,7 @@ public class login extends HttpServlet {
             Cookie usernameCookie = new Cookie("username", username);
             response.addCookie(usernameCookie);
 
-            response.sendRedirect("welcome.jsp");
+            response.sendRedirect("home.jsp");
 
         } else {
             response.sendRedirect("login.jsp");
